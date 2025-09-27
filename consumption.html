@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Consumption Data</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Your Electrical Appliances</h1>
+
+    <div>
+        <input type="text" id="applianceName" placeholder="Appliance Name (e.g., AC)" />
+        <button onclick="addAppliance()">Add Appliance</button>
+    </div>
+
+    <div>
+        <input type="text" id="searchInput" placeholder="Search appliance..." oninput="renderEquipments()" />
+    </div>
+
+    <div id="equipmentsList"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
